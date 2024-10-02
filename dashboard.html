@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panel de Usuario - GymFit</title>
+    <link rel="stylesheet" href="/img/styles.css" />
+  </head>
+  <body>
+    <header>
+        <div class="container">
+          <div class="logo">
+            <a
+              href="/templates/index.html"
+              style="color: rgb(255, 255, 255); text-decoration: none"
+              >Gym Resistencia</a
+            >
+          </div>
+  
+          <nav>
+            <div class="menu-toggle" id="mobile-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul>
+              <li><a href="/templates/index.html">Inicio</a></li>
+              <li><a href="/templates/login.html">Cerrar sesión</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <nav>
+        <ul>
+            <li><a href="/templates/dashboard.html">dashboard</a></li>
+            <li><button class="tab-button" data-tab="ingresos">Ingresos</button></li>
+            <li><button class="tab-button" data-tab="inventario">Inventario</button></li>
+            <li><button class="tab-button" data-tab="usuarios">Usuarios</button></li>
+            <li><button class="tab-button" data-tab="rutinas">Rutinas</button></li>
+        </ul>
+    </nav>
+    <h1>panel de Administración</h1>
+    <main>
+      
+      <div class="dashboard-container">
+        <section id="ingresos">
+          <h2>Control de Ingresos</h2>
+          <div class="dashboard-card">
+            <h3>Ingresos Totales</h3>
+            <p>$45,231.89</p>
+            <small>+20.1% del mes pasado</small>
+        </div>
+          <button id="registrarIngreso" class="btn">Registrar Ingreso</button>
+          <div id="ultimoIngreso"></div>
+          
+        </section>
+        <section id="rutinas">
+          <h2>Mis Rutinas</h2>
+          <h3>Usuarios Activos</h3>
+                <p>2,350</p>
+                <small>+180 nuevas inscripciones</small>
+          <ul id="listaRutinas"></ul>
+          <button id="nuevaRutina" class="btn">Nueva Rutina</button>
+        </section>
+        <section id="calendario">
+            <section id="calendario">
+                <h2>Calendario</h2>
+                <div id="calendarioContainer">
+                    <div id="calendarioHeader">
+                        <button id="prevMonth">&lt;</button>
+                        <h3 id="monthYear"></h3>
+                        <button id="nextMonth">&gt;</button>
+                    </div>
+                    <table id="calendarioTabla">
+                        <thead>
+                            <tr>
+                                <th>Dom</th>
+                                <th>Lun</th>
+                                <th>Mar</th>
+                                <th>Mié</th>
+                                <th>Jue</th>
+                                <th>Vie</th>
+                                <th>Sáb</th>
+                            </tr>
+                        </thead>
+                        <tbody id="calendarioCuerpo"></tbody>
+                    </table>
+                </div>
+            </section>
+        </section>
+        
+            </div>
+            <div class="dashboard-card">
+                <h3>Inventario</h3>
+                <p>573 items</p>
+                <small>12 items con bajo stock</small>
+            </div>
+            <div class="dashboard-card">
+                <h3>Rutinas Activas</h3>
+                <p>342</p>
+                <small>+22 nuevas esta semana</small>
+            </div>
+        </div>
+        
+      </div>
+      
+    </main>
+
+    <footer>
+      <p>&copy; 2023 GymFit. Todos los derechos reservados.</p>
+      <p>contactanos:3014810904</p>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

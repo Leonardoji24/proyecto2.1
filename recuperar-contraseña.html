@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña - GymFit</title>
+    <link rel="stylesheet" href="/img/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+          <div class="logo">
+            <a
+              href="/templates/index.html"
+              style="color: rgb(255, 255, 255); text-decoration: none"
+              >Gym Resistencia</a
+            >
+          </div>
+  
+          <nav>
+            <div class="menu-toggle" id="mobile-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul>
+              <li><a href="/templates/index.html">Inicio</a></li>
+              <li><a href="/templates/login.html">Iniciar sesión</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+    <main>
+        <section class="form-container">
+            <h2>Recuperar Contraseña</h2>
+            <form id="recuperarContrasenaForm">
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <button type="submit" class="btn">Enviar enlace de recuperación</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 GymFit. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>

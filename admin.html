@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panel de Administración - GymFit</title>
+    <link rel="stylesheet" href="/img/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a
+            href="/templates/index.html"
+            style="color: rgb(255, 255, 255); text-decoration: none"
+            >Gym Resistencia</a
+          >
+        </div>
+
+        <nav>
+          <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul>
+            <li><a href="/templates/index.html">Inicio</a></li>
+            <li><a href="/templates/login.html">cerrar sesión</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="barra_admin" >
+     
+        <ul>
+          <li><a href="/templates/dashboard.html">Dashboard</a></li>
+          <li><a href="/templates/register.html">Registrar</a></li>
+          <li><a href="/templates/dashboard.html">Clientes</a></li>
+          <li><a href="/templates/dashboard.html">Rutinas</a></li>
+          <li><a href="/templates/dashboard.html">Inventario</a></li>
+        </ul>
+      
+    </div>
+    <main>
+      <h1>Panel de Administración</h1>
+      <div class="admin-dashboard">
+        <section class="admin-card">
+          <h2>Usuarios Registrados</h2>
+          <p id="totalUsuarios">Cargando...</p>
+        </section>
+        <section class="admin-card">
+          <h2>Ingresos Hoy</h2>
+          <p id="ingresosHoy">Cargando...</p>
+        </section>
+        <section class="admin-card">
+          <h2>Rutinas Creadas</h2>
+          <p id="totalRutinas">Cargando...</p>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 GymFit. Todos los derechos reservados.</p>
+      <p>contactanos:3014810904</p>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
